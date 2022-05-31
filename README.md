@@ -108,13 +108,13 @@ Adding more features for the blind such as adding regional languages, networking
   * Using HTTPS
 
     ```sh
-    git clone https://github.com/hussaino03/ToHacks.git
+    git clone https://github.com/tejasambhore/ToHacks22.git
     ```
   
   * Using SSH
 
     ```sh
-    git clone git@github.com:hussaino03/ToHacks.git
+    git clone git@github.com:TejasAmbhore/TOHacks22.git
     ```
 
 * Change your working directory to the cloned folder `user-profile-ms`
@@ -131,8 +131,6 @@ Adding more features for the blind such as adding regional languages, networking
 
     > ***NOTE***  
     > By default, this will **not** include any of your existing site packages.
-
-    For activating or deactivating virtual env, take [this](https://github.com/orgs/rkhall-iitkgp/teams/opensoft-2022-team/discussions/8) for reference.
 
 * Download all the dependencies
 
