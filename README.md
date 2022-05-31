@@ -7,16 +7,12 @@
 
 <!-- PROJECT LOGO -->
 <br>
+
 <div align="center">
 
-  <h1 align="center">ToHacks</h1>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9qsjzWAkeyCPRHTynRMqbf7JBKj96YmmkkQ&usqp=CAU"></img>
 
-  <p align="center">
-   TBA
-    <br>
-    <br>
-    <a href="https://github.com/hussaino03/ToHacks"><strong>Explore the docs »</strong></a>
-  </p>
+  <h1 align="center">ToHacks 2022</h1>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -51,59 +47,137 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## Domain Name
-
-TBA
+## Snapshots of Approach
+<div align="center">
+<img src="https://media.discordapp.net/attachments/979814222831706195/980464116504350740/conversion.png?width=1191&height=670" width=800></img>
+<br>
+<img src="https://media.discordapp.net/attachments/979814222831706195/980464115942318100/output.png?width=1191&height=670" width=800></img>
+</div>
 
 ## Inspiration
 
-TBA
+In today's fast paced world there is hardly any time for people on the road to observe the surroundings and help the needy. However, the technology has successfully advanced well that the blind need not depend on any other person to perform their day to day activities. Guide Mobile is similar to that of a guide dog but it will help you to experience the scenery before you as if someone speaks with you.
 
 ## What it does
 
-TBA
+Guide Mobile which is a web app takes an image as input, and it provides a speech as an output where the sentence is generated with an image captioning algorithm.
 
 ## How We built it
+The image captioning model was built with tensorflow library. The model was trained on the flick8k image captioning dataset. The overall accuracy of the model was around 80%. There was extensive data preprocessing for the images as well as the corresponding text data and there was use of both Convolutional and Sequential networks. We are deploying the model on web app with Django MVT.
 
-TBA
+## Challenges we ran into
+The dataset provided with very limited images hence the output is not accurate for all the real world scenarios. Backend development was something new which under the limited time was challenging to build.
 
-## Most Creative use of Twilio
+## Accomplishments that we're proud of
+We were able to deploy the web app and test it successfully on images. The outputs for most of the cases yielded fruitful results.
 
-TBA
+## What we learned
+Learned to maintain ML models and deploy them. Also learned to version the progress and develop robust backend for the website.
 
+## What's next for Guide Mobile
+Adding more features for the blind such as adding regional languages, networking etc. Also work on real time scenery description so they don't need to click a picture to understand.
 ### Features:
-* TBA
+* Easy to interact UI
+* Easy to understand voice
+* Upcoming range for multiple languages
 
 ### Built With
 
-* TBA
+* Python
+* Django
+* Tensorflow
 
 <!-- GETTING STARTED -->
 # Getting Started
 
 <!-- PREREQUISITES -->
 ## Prerequisites
-* TBA 
+* Install the dependencies which are related to ML and Django
+* Host the Django web application
+* Input an image
 
 
-## Installation
-* TBA
+## **Local Setup**
 
-## Available Scripts
+* If you wish to run your own build, first ensure you have python3 globally installed in your computer. If not, you can get python [here](https://www.python.org/downloads/).
 
-TBA
+* Download [pip](https://pip.pypa.io/en/stable/installing/) and add it to the path
+
+* Clone the repository
+
+  * Using HTTPS
+
+    ```sh
+    git clone https://github.com/hussaino03/ToHacks.git
+    ```
+  
+  * Using SSH
+
+    ```sh
+    git clone git@github.com:hussaino03/ToHacks.git
+    ```
+
+* Change your working directory to the cloned folder `user-profile-ms`
+
+    ```bash
+    cd path/to/backend
+    ```
+
+* Create a new virtual environment inside `user-profile-ms` directory and activate that
+
+    ```bash
+    python -m venv env
+    ```
+
+    > ***NOTE***  
+    > By default, this will **not** include any of your existing site packages.
+
+    For activating or deactivating virtual env, take [this](https://github.com/orgs/rkhall-iitkgp/teams/opensoft-2022-team/discussions/8) for reference.
+
+* Download all the dependencies
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+    Use `pip3` if `pip` not working
+
+### For running Django Server
+
+* Migrate to the database
+
+    ```bash
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+
+    Use `python3` if `python` not working
+
+* Run server
+
+    ```sh
+    python manage.py runserver
+    ```
+
+---
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [] TBA 
-
-<!-- [✅] TBA -->
+* [✅] Train an Image captioning model
+* [✅] Test the model on few input images
+* [✅] Design a Django app to deploy the model
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+## Contributors
+
+Thanks to all the **people who contribute**
+
+![Contributors](https://contributors-img.web.app/image?repo=hussaino03/ToHacks)
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
